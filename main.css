@@ -4,15 +4,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.nikel_svet {
+    color: #334141;
+}
 /* Header boshlandi */
 
 .header_top {
     display: flex;
     /* 1rem = 16px */
-    padding: 1rem 6rem;
+    padding: 0.5rem 6rem;
     justify-content: space-between;
-    border: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
     align-items: center;
+    font-size: 1rem;
 }
 
 .header_contact_wrap {
@@ -26,6 +30,78 @@
 .header_contact p:last-child {
     margin-top: 0.5rem;
     text-align: center;
+    font-size: 0.9rem;
+}
+
+.header_bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    align-items: center;
+
+}
+
+.input_save {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_save img {
+    width: 12.5rem;
+}
+
+.input_save input {
+    width: 29rem;
+    height: 2.5rem;
+    padding: 0 2rem;
+    border: 0.15rem #0787ea solid;
+    border-bottom-left-radius: 1.5rem;
+    border-top-left-radius: 1.5rem;
+    outline: none;
+}
+
+.input_save button {
+    height: 2.75rem;
+    width: 4rem;
+    color: #fff;
+    background-color: #0787ea;
+    border: 0.15rem #0787ea solid;
+    font-size: 1.2rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.korzina_save {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 12.5rem;
+    font-size: 1.4rem;
+}
+
+.korzina_save a{
+    display: inline-block;
+    color: #334141;
+    position: relative;
+}
+
+.korzina_save a:hover {
+    color: black;
+}
+
+.korzina_save a:last-child::before{
+    content: '0';
+    position: absolute;
+    top: 1rem;
+    left: 0.4rem;
+    font-size: 0.8rem;
+    color: #fff;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #0787ea;
 }
 
 /* Header tugadi */
